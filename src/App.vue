@@ -6,6 +6,7 @@
     <Gallery></Gallery>
     <OurServices></OurServices>
     <WhyChooseUs></WhyChooseUs>
+    <Testimonials></Testimonials>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Gallery from './Gallery.vue';
 import Hero from './Hero.vue';
 import Navbar from './Navbar.vue';
 import OurServices from './OurServices.vue';
+import Testimonials from './Testimonials.vue';
 import WhyChooseUs from './WhyChooseUs.vue';
 
 export default {
@@ -24,7 +26,8 @@ export default {
     AboutUs,
     Gallery,
     OurServices,
-    WhyChooseUs
+    WhyChooseUs,
+    Testimonials
   }
 }
 </script>
