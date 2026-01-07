@@ -1,5 +1,5 @@
 <template>
-  <div class="h-1500 bg-red-400 overflow-hidden">
+  <div class="bg-red-400 overflow-hidden">
     <Navbar></Navbar>
     <Hero></Hero>
     <AboutUs></AboutUs>
@@ -8,11 +8,13 @@
     <WhyChooseUs></WhyChooseUs>
     <Testimonials></Testimonials>
     <ServiceAreas></ServiceAreas>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import AboutUs from './AboutUs.vue';
+import Footer from './Footer.vue';
 import Gallery from './Gallery.vue';
 import Hero from './Hero.vue';
 import Navbar from './Navbar.vue';
@@ -30,7 +32,8 @@ export default {
     OurServices,
     WhyChooseUs,
     Testimonials,
-    ServiceAreas
+    ServiceAreas,
+    Footer
   }
 }
 </script>
