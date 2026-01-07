@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen py-4 bg-yellow-100 flex flex-col items-center">
+  <div class="h-screen text-white py-4 bg-yellow-100 flex flex-col items-center bg-[url(../assets/hero.png)]">
     <div class="font-bold text-3xl mb-5 mt-auto">
       {{ header }}
     </div>

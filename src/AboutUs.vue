@@ -2,10 +2,10 @@
   <div class="flex gap-4 py-25 px-15">
     <!-- Experience -->
     <div class="border-4 border-yellow-400 flex py-7 shrink-0 relative h-fit">
-      <div class="bg-red-400 w-25 h-5 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="bg-white w-25 h-5 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div class="text-5xl font-bold ms-5 me-2">35</div>
       <div class="me-2">years <br> of experience</div>
-      <div class="bg-red-400 w-25 h-5 absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"></div>
+      <div class="bg-white w-25 h-5 absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"></div>
     </div>
 
     <!-- About us -->

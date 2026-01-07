@@ -1,9 +1,9 @@
 <template>
   <div class="flex px-10 gap-5 justify-center">
-    <GalleryItem text="Balcony"></GalleryItem>
-    <GalleryItem text="Pool"></GalleryItem>
-    <GalleryItem text="Garden"></GalleryItem>
-    <GalleryItem text="Lounge"></GalleryItem>
+    <GalleryItem image-url="../assets/balcony.png"></GalleryItem>
+    <GalleryItem image-url="../assets/pool.png"></GalleryItem>
+    <GalleryItem image-url="../assets/garden.png"></GalleryItem>
+    <GalleryItem image-url="../assets/lounge.png"></GalleryItem>
   </div>
 </template>
 

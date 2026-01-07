@@ -1,13 +1,13 @@
 <template>
   <div class="px-10">
     <div class="text-yellow-400 mb-2">Testimonials</div>
-    <div class="flex items-center mb-3">
+    <div class="flex items-center mb-7">
       <div class="text-2xl font-bold me-auto">What Our Clients Say</div>
       <i class="fa-solid text-2xl fa-circle-arrow-left me-2" @click="goLeft"></i>
       <i class="fa-solid text-2xl fa-circle-arrow-right" @click="goRight"></i>
     </div>
     <!-- Carousel -->
-    <div class="overflow-hidden mb-5">
+    <div class="overflow-hidden mb-10">
       <div class="flex flex-nowrap transition-transform duration-300 ease-linear"
            :style="{ transform: `translateX(-${currentIndex * 50}%)` }"
       >

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex px-10 gap-5 mb-25">
-    <div class="w-80 h-90 bg-gray-400 shrink-0"></div>
+  <div class="flex px-10 gap-10 mb-25">
+    <div class="w-110 h-100 bg-[url('../assets/whychooseus.png')] bg-cover shrink-0"></div>
     <div class="grow">
       <div class="text-yellow-400 text-2xl">Why Choose Us</div>
       <div class="font-bold text-3xl mb-5">Unmatched Quality, Trust, And Service</div>
