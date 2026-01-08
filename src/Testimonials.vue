@@ -1,7 +1,7 @@
 <template>
   <div class="px-10">
     <div class="text-yellow-400 mb-4 font-[Raleway]">Testimonials</div>
-    <div class="flex items-center mb-7">
+    <div class="flex items-center mb-7 dark:text-white">
       <div class="text-2xl font-bold me-auto font-[Fraunces]">What Our Clients Say</div>
       <i class="fa-solid text-2xl fa-circle-arrow-left me-2" @click="goLeft"></i>
       <i class="fa-solid text-2xl fa-circle-arrow-right" @click="goRight"></i>
@@ -12,9 +12,9 @@
            :style="{ transform: `translateX(-${currentIndex * 50}%)` }"
       >
         <!-- Testimonials -->
-        <div v-for="testimonial in arr" class="h-50 w-1/2 shrink-0 px-2">
-          <div class="h-full bg-neutral-200 flex px-5 py-7">
-            <div class="w-15 h-15 shrink-0 border-2 rounded-full overflow-hidden mr-5">
+        <div v-for="testimonial in arr" class="h-50 w-1/2 shrink-0 px-2 dark:text-white">
+          <div class="h-full bg-neutral-200 dark:bg-[#5E6065] flex px-5 py-7">
+            <div class="w-15 h-15 shrink-0 border-2 dark:border-white rounded-full overflow-hidden mr-5">
               <img :src="testimonial.url">
             </div>
             <div>
@@ -28,8 +28,8 @@
                 {{ testimonial.comment }}
               </div>
             </div>
-            <div class="w-10 h-10 shrink-0 rounded-full overflow-hidden">
-              <img src="../assets/google.png">
+            <div class="w-10 h-10 p-3 bg-black dark:bg-white shrink-0 rounded-full overflow-hidden">
+              <img src="../assets/google-icon.webp">
             </div>
           </div>
         </div>
@@ -37,11 +37,11 @@
     </div>
     <!-- Dots -->
     <div class="flex items-center gap-1.5 justify-center">
-      <i v-for="_ in currentIndex" class="fa-solid d-block text-[#1D1D1D]/21 fa-circle"></i>
+      <i v-for="_ in currentIndex" class="fa-solid d-block text-[#1D1D1D]/21 fa-circle dark:text-neutral-500"></i>
       <svg width="50" height="17" viewBox="0 0 37 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="36" height="11" rx="5.5" fill="#1D1D1D"/>
+        <rect width="36" height="11" rx="5.5" class="fill-black dark:fill-white"/>
       </svg>
-      <i v-for="_ in (arr.length - currentIndex - 2)" class="fa-solid text-[#1D1D1D]/21 fa-circle"></i>
+      <i v-for="_ in (arr.length - currentIndex - 2)" class="fa-solid text-[#1D1D1D]/21 fa-circle dark:text-neutral-500"></i>
     </div>
   </div>
 </template>
