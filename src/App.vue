@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden bg-neutral-100 w-280 mx-auto border-x">
+  <div class="overflow-hidden bg-neutral-100 dark:bg-[#23262D] w-280 mx-auto border-x">
     <Navbar></Navbar>
     <Hero></Hero>
     <AboutUs></AboutUs>

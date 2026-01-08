@@ -1,21 +1,21 @@
 <template>
   <div class="flex gap-4 py-25 px-15">
     <!-- Experience -->
-    <div class="border-4 border-yellow-400 flex py-7 shrink-0 relative h-fit">
-      <div class="bg-neutral-100 w-25 h-5 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="border-4 border-yellow-400 flex py-7 shrink-0 relative h-fit dark:text-white">
+      <div class="bg-neutral-100 dark:bg-[#23262D] w-25 h-5 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
       <div class="text-5xl font-bold ms-5 me-2">35</div>
       <div class="me-2 font-[Old_Standard_TT]">years <br> of experience</div>
-      <div class="bg-neutral-100 w-25 h-5 absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"></div>
+      <div class="bg-neutral-100 dark:bg-[#23262D] w-25 h-5 absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"></div>
     </div>
 
     <!-- About us -->
     <div class="mx-5 w-70 shrink-0">
       <div class="font-[Raleway] text-yellow-400 text-xl mb-2">About Us</div>
-      <div class="text-2xl font-[Fraunces]">Who We Are: Crafting Memorable Stays, One Destination At A Time</div>
+      <div class="text-2xl font-[Fraunces] dark:text-white">Who We Are: Crafting Memorable Stays, One Destination At A Time</div>
     </div>
 
     <!-- Message -->
-    <div class="max-h-60 overflow-hidden">
+    <div class="max-h-60 overflow-hidden dark:text-white">
       {{ message }}
     </div>
   </div>
