@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="w-235 bg-neutral-300 mx-auto p-13 gap-x-10 flex items-center rounded-t-xl">
-      <div class="font-sans">
+    <div class="w-235 bg-neutral-300 dark:bg-[#393B42] mx-auto p-13 gap-x-10 flex items-center rounded-t-xl">
+      <div class="font-sans dark:text-white">
         Discover your ideal getaway effortlessly—browse our curated stays and enjoy exceptional comfort and convenience.
       </div>
-      <div class="p-2 bg-black text-white text-nowrap h-fit hover:cursor-pointer font-[Fraunces] text-sm">
+      <div class="p-2 bg-black dark:bg-white text-white dark:text-black text-nowrap h-fit hover:cursor-pointer font-[Fraunces] text-sm">
         Contact Us Today to book your premium stay
       </div>
     </div>
