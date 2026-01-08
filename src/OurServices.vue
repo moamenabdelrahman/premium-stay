@@ -3,7 +3,7 @@
     <!-- Our Services -->
     <div class="pt-2">
       <div class="text-yellow-400 mb-5 font-[Raleway]">Our Services</div>
-      <div class="font-bold text-[18px] font-[Fraunces]">
+      <div class="font-bold text-[18px] font-[Fraunces] dark:text-white">
         Experience Comfort, Conveinience, And Care
       </div>
     </div>
