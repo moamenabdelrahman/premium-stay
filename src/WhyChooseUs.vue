@@ -3,9 +3,9 @@
     <div class="w-110 h-100 bg-[url('../assets/whychooseus.png')] bg-cover shrink-0"></div>
     <div class="grow">
       <div class="text-yellow-400 mb-4 text font-[Raleway]">Why Choose Us</div>
-      <div class="font-bold text-xl mb-5 font-[Fraunces]">Unmatched Quality, Trust, And Service</div>
+      <div class="font-bold text-xl mb-5 font-[Fraunces] dark:text-white">Unmatched Quality, Trust, And Service</div>
       <div v-for="item in faqs" :id="item.id" @click="handleClick(item.id)"
-        class="px-6 py-2 bg-neutral-200 mb-4 font-sans"
+        class="px-6 py-2 bg-neutral-200 dark:bg-[#373A40] mb-4 font-sans dark:text-white"
       >
         <div class="flex justify-between items-center">
           <span class="text-sm">{{ item.question }}</span>
