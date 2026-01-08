@@ -19,8 +19,8 @@
         </defs>
       </svg>
     </div>
-    <div class="font-bold mb-4">{{ title }}</div>
-    <div>{{ text }}</div>
+    <div class="font-bold mb-4 font-serif text-[14px]">{{ title }}</div>
+    <div class="text-center text-[10px]">{{ text }}</div>
   </div>
 </template>
 

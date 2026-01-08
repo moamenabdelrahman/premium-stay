@@ -1,9 +1,9 @@
 <template>
-  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-7 my-25 px-10">
+  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-15 my-25 px-10">
     <!-- Our Services -->
     <div class="pt-2">
-      <div class="text-yellow-400 mb-5">Our Services</div>
-      <div class="font-bold text-2xl">
+      <div class="text-yellow-400 mb-5 font-[Raleway]">Our Services</div>
+      <div class="font-bold text-[18px] font-[Fraunces]">
         Experience Comfort, Conveinience, And Care
       </div>
     </div>
@@ -26,7 +26,7 @@ import ServiceItem from './ServiceItem.vue';
       return {
         services: [
           {
-            title: 'WIFI',
+            title: 'WI-FI',
             text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa'
           },
           {

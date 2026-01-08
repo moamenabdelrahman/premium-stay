@@ -2,18 +2,18 @@
   <div class="flex px-10 gap-10 mb-25">
     <div class="w-110 h-100 bg-[url('../assets/whychooseus.png')] bg-cover shrink-0"></div>
     <div class="grow">
-      <div class="text-yellow-400 text-2xl">Why Choose Us</div>
-      <div class="font-bold text-3xl mb-5">Unmatched Quality, Trust, And Service</div>
+      <div class="text-yellow-400 mb-4 text font-[Raleway]">Why Choose Us</div>
+      <div class="font-bold text-xl mb-5 font-[Fraunces]">Unmatched Quality, Trust, And Service</div>
       <div v-for="item in faqs" :id="item.id" @click="handleClick(item.id)"
-        class="p-2 bg-gray-300 mb-2"
+        class="px-6 py-2 bg-neutral-200 mb-4 font-sans"
       >
         <div class="flex justify-between items-center">
-          <span class="font-bold">{{ item.question }}</span>
+          <span class="text-sm">{{ item.question }}</span>
           <i v-if="openedQuestionId === item.id" class="fa-solid fa-angle-right"></i>
           <i v-else class="fa-solid fa-angle-down"></i>
         </div>
         <div v-if="item.id === openedQuestionId"
-          class="mt-2"
+          class="mt-4 text-[12px]"
         >{{ item.answer }}</div>
       </div>
     </div>
@@ -28,22 +28,22 @@ export default {
         {
           id: '1',
           question: 'What amenities are included?',
-          answer: 'some very random answer'
+          answer: 'Booking is easy through our website or mobile app. Simply choose your dates, select your stay, and complete the reservation process'
         },
         {
           id: '2',
           question: 'Is breakfast included?',
-          answer: 'some very random answer'
+          answer: 'Booking is easy through our website or mobile app. Simply choose your dates, select your stay, and complete the reservation process'
         },
         {
           id: '3',
           question: 'Are pets allowed?',
-          answer: 'some very random answer'
+          answer: 'Booking is easy through our website or mobile app. Simply choose your dates, select your stay, and complete the reservation process'
         },
         {
           id: '4',
           question: 'How can I book?',
-          answer: 'some very random answer'
+          answer: 'Booking is easy through our website or mobile app. Simply choose your dates, select your stay, and complete the reservation process'
         }
       ],
       openedQuestionId: null
