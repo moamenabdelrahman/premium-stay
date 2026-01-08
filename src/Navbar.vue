@@ -1,7 +1,7 @@
 <template>
   <div class="fixed w-280 z-100 transition-all duration-300"
       :class="{
-        'bg-white shadow-md': scrolled,
+        'bg-white shadow-md dark:bg-black': scrolled,
         'bg-transparent': !scrolled
       }"
   >
@@ -10,8 +10,8 @@
           'text-white': !scrolled
         }"
     >
-      <div class="pressable text-[35px] font-[Playfair_Display_SC] mr-10">LOGO</div>
-      <div class="flex gap-13 ms-15 font-[EB_Garamond] text-[18px]">
+      <div class="pressable text-[35px] font-[Playfair_Display_SC] mr-10 dark:text-white">LOGO</div>
+      <div class="flex gap-13 ms-15 font-[EB_Garamond] text-[18px] dark:text-white">
         <div class="pressable">Home</div>
         <div class="pressable">Services</div>
         <div class="pressable">About us</div>
@@ -21,7 +21,7 @@
       <button type="button" class="ms-auto pressable px-2.5 py-1.5 "
                            :class="{
                             'bg-white text-black': !scrolled,
-                            'bg-black text-white': scrolled
+                            'bg-black text-white dark:bg-white dark:text-black': scrolled
                            }"
       >
         Book Now
@@ -30,9 +30,10 @@
       <!-- Dark Mode Toggle -->
       <button
         @click="toggleDarkMode"
-        class="ml-4 px-2 py-1 border rounded transition"
+        class="ml-4 px-2 py-1 border rounded transition dark:border-white dark:text-white"
       >
-        {{ darkMode ? 'Light' : 'Dark' }}
+      <div class="hidden dark:block">Dark</div>
+      <div class="dark:hidden">Light</div>
       </button>
       
     </div>
@@ -45,8 +46,7 @@
 export default {
   data() {
     return {
-      scrolled: false,
-      darkMode: false
+      scrolled: false
     }
   },
   mounted() {
@@ -60,15 +60,7 @@ export default {
       this.scrolled = window.scrollY > 20
     },
     toggleDarkMode() {
-      this.darkMode = !this.darkMode;
-      this.applyDarkMode();
-    },
-    applyDarkMode() {
-      if (this.darkMode) {
-        // document.documentElement.classList.add('dark');
-      } else {
-        // document.documentElement.classList.remove('dark');
-      }
+      document.documentElement.classList.toggle('dark');
     }
   }
 }
